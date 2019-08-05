@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageItem"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_weight="1"
+        android:background="@drawable/main"
+
+        android:text="0" />
+    <TextView
+        android:id="@+id/Textviewname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="name"
+        />
+    <TextView
+        android:id="@+id/Textviewtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="学生"
+        />
+    <TextView
+        android:id="@+id/Textvisex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="sex"
+        />
+    <Button
+        android:id="@+id/iupdatebtn"
+        android:background="@color/design_default_color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="修改"
+        />
+    <Button
+        android:id="@+id/idelbtn"
+        android:background="@android:color/holo_red_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="删除"
+        />
+
+</LinearLayout>

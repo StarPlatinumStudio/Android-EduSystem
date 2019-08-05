@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".teacherActivity"
+    tools:showIn="@layout/activity_teacher">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="659dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="-4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="177dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/background_light"
+                android:orientation="horizontal"
+                android:paddingTop="20px">
+
+                <ImageView
+                    android:id="@+id/t1imageView"
+                    android:layout_width="303dp"
+                    android:layout_height="138dp"
+                    android:layout_margin="20px"
+                    android:layout_weight="1"
+                    android:background="@mipmap/ic_launcher_round"
+                    android:padding="0dp"
+                    android:paddingTop="0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageChoose2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="500px"
+                        app:srcCompat="@drawable/ic_menu_camera" />
+
+                    <TextView
+                        android:id="@+id/t_title"
+                        android:layout_width="132dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="50px"
+                        android:paddingLeft="50px"
+                        android:textAppearance="@android:style/TextAppearance.Holo.DialogWindowTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100px"
+                        android:text="所在院校：福建工程学院"
+                        android:textAppearance="@android:style/TextAppearance.Holo" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/t_info_btn"
+                style="@android:style/Widget.Material.Light.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="个人信息管理" />
+
+            <Button
+                android:id="@+id/t_query_btn"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="管理学生课程修习" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

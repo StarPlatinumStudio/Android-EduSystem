@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".StudentMainActivity"
+    tools:showIn="@layout/activity_student_main">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="679dp"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="-4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal"
+            android:paddingTop="20px">
+
+            <ImageView
+                android:id="@+id/s1imageView"
+                android:layout_width="303dp"
+                android:layout_height="138dp"
+                android:layout_margin="20px"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_launcher_round"
+                android:padding="0dp"
+                android:paddingTop="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageChoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="500px"
+                    app:srcCompat="@drawable/ic_menu_camera" />
+
+                <TextView
+                    android:id="@+id/s_title"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="50px"
+                    android:paddingLeft="50px"
+                    android:textAppearance="@android:style/TextAppearance.Holo.DialogWindowTitle"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100px"
+                    android:text="所在院校：福建工程学院"
+                    android:textAppearance="@android:style/TextAppearance.Holo" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="385dp"
+            android:layout_height="162dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_login_div"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/s_query_btn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/background_button_div"
+                android:text="个人课程修习查询" />
+
+            <Button
+                android:id="@+id/s_info_btn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/background_button_div"
+                android:text="个人基本信息维护" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
